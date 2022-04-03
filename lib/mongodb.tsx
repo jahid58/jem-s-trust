@@ -1,6 +1,6 @@
 import { MongoClient } from 'mongodb'
 
-const options:Object = {
+const options: Object = {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 }
@@ -12,10 +12,7 @@ if (!process.env.MONGODB_URI) {
   throw new Error('Please add your Mongo URI to .env.local')
 }
 
-client = new MongoClient(
- process.env.MONGODB_URI,
-  options
-)
+client = new MongoClient(process.env.MONGODB_URI, options)
 clientPromise = client.connect()
 
 // Export a module-scoped MongoClient promise. By doing this in a

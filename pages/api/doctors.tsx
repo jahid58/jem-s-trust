@@ -1,7 +1,7 @@
-import clientPromise from '../../lib/mongodb'
+import * as clientPromise from '../../lib/mongodb'
 
-export default async function handler(req, res) {
-  const client = await clientPromise
+export default async function handler(req: any, res: any) {
+  const client: any = await clientPromise
   const db = client.db("jem'sTrustDb")
   switch (req.method) {
     case 'POST':
