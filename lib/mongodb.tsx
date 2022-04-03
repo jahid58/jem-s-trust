@@ -1,6 +1,6 @@
 import { MongoClient } from 'mongodb'
 
-const options = {
+const options:Object = {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 }
@@ -13,7 +13,7 @@ if (!process.env.MONGODB_URI) {
 }
 
 client = new MongoClient(
-  "mongodb+srv://Jahid:jsashsisds@cluster0.fdjas.mongodb.net/jem'sTrustDb?retryWrites=true&w=majority",
+ process.env.MONGODB_URI,
   options
 )
 clientPromise = client.connect()
