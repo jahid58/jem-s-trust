@@ -8,6 +8,9 @@ module.exports = {
       height: {
         hr: '1px',
       },
+      colors: {
+        a: '#081839',
+      },
     },
   },
 

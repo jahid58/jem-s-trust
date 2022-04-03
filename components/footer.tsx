@@ -32,8 +32,8 @@ const Footer = () => {
     e.preventDefault()
   }
   return (
-    <div className="m-auto bg-slate-900 p-4 text-center text-gray-500">
-      <div className="m-4 flex  items-start justify-around   ">
+    <div className=" bg-slate-900 p-4 text-gray-500">
+      <div className="m-4 flex flex-col items-start justify-around md:flex-row   ">
         <div className="">
           <div>
             <h3 className="m-1">Contact Information</h3>
@@ -42,7 +42,7 @@ const Footer = () => {
           <div>
             <div>
               <div>
-                <div className="flex justify-between  ">
+                <div className="flex space-x-2    ">
                   <OutlineIcons.LocationMarkerIcon className="h-6 w-6"></OutlineIcons.LocationMarkerIcon>{' '}
                   <Link href="/#">
                     <span className="cursor-pointer font-serif hover:text-gray-100">
@@ -51,19 +51,19 @@ const Footer = () => {
                   </Link>
                 </div>
               </div>
-              <div className="flex justify-between ">
+              <div className="flex space-x-2   ">
                 <OutlineIcons.InboxIcon className="h-6 w-6 "></OutlineIcons.InboxIcon>{' '}
                 <span className="cursor-pointer font-serif hover:text-gray-100">
                   jem's@trust.com
                 </span>
               </div>
-              <div className="flex justify-between ">
+              <div className="flex space-x-2   ">
                 <OutlineIcons.GlobeAltIcon className="h-6 w-6" />
                 <span className="cursor-pointer font-serif hover:text-gray-100">
                   jem'strust.com{' '}
                 </span>
               </div>
-              <div className="flex justify-between ">
+              <div className=" flex space-x-2 ">
                 <OutlineIcons.PhoneIcon className="h-6 w-6"></OutlineIcons.PhoneIcon>
                 <span className="cursor-pointer font-serif hover:text-gray-100">
                   01404637569
@@ -77,30 +77,17 @@ const Footer = () => {
             <h3 className="mb-1">Health Solutions</h3>
             <Hr width="w-full" />
           </div>
-          <div>
-            <div>
-              <p>Outpatient Surgery</p>
-            </div>
-          </div>
-          <div>
-            <div>
-              <p>Cardiac Clinic</p>
-            </div>
-          </div>
-          <div>
-            <div>
-              <p>Pharmacy Clinic</p>
-            </div>
-          </div>
-          <div>
-            <div>
-              <p>Gynaecological Clinic</p>
-            </div>
-          </div>
-          <div>
-            <div>
-              <p>Outpatient Rehabilitation</p>
-            </div>
+
+          <div className="">
+            <p>Outpatient Surgery</p>
+
+            <p>Cardiac Clinic</p>
+
+            <p>Pharmacy Clinic</p>
+
+            <p>Gynaecological Clinic</p>
+
+            <p>Outpatient Rehabilitation</p>
           </div>
         </div>
         <div className="flex flex-col">

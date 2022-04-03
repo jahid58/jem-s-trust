@@ -104,7 +104,9 @@ const Header = () => {
           <p>Contact Us</p>
         </div>
         <div className="rounded py-2 px-3 hover:bg-blue-100">
-          <p>Packages </p>
+          <Link href="/bookAppointment">
+            <p>Book an Appointment </p>
+          </Link>
         </div>
       </div>
     </div>

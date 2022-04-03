@@ -15,21 +15,21 @@ const Navbar = ({ setMenuIsOpen, menuIsOpen }: Props) => {
   const { query } = useRouter()
   console.log(menuIsOpen)
   return (
-    <div className="flex items-center justify-between bg-yellow-100 py-3">
+    <div className="flex items-center justify-between  bg-slate-800 py-2">
       <div className="flex items-center justify-center  sm:space-x-4">
         <Image src={logo} width={80} height={80} />
-        <p className="font-serif text-xl font-bold text-lime-800 md:text-5xl">
+        <p className="font-serif text-2xl font-semibold  text-emerald-500 md:text-3xl">
           Jem's Trust
         </p>
       </div>
       <SocialIcons />
       <div></div>
-      <div className="hidden sm:block">
+      <div className="hidden text-white sm:block">
         <p>
-          <span className=" font-serif font-medium  sm:text-2xl">Call</span> :
+          <span className=" font-serif font-medium  ">Call</span> :
           +8801404637569
         </p>
-        <p className="font-serif text-green-900">jem'strust@gmail.com</p>
+        <p className="font-serif text-gray-200">jem'strust@gmail.com</p>
       </div>
       <div
         className="block sm:hidden"
