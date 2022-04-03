@@ -19,9 +19,9 @@ function Home() {
       </Head>
       <Navbar menuIsOpen={menuIsOpen} setMenuIsOpen={setMenuIsOpen} />
       <Header />
-      {/* <Slider />
-      <Introduction /> */}
-      {/* <Footer /> */}
+      <Slider />
+      <Introduction />
+      <Footer />
     </>
   )
 }
