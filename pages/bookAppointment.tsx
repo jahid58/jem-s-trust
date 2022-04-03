@@ -110,7 +110,7 @@ const BookAppointment = ({ doctors }: Doctors) => {
   )
 }
 export async function getServerSideProps() {
-  let res = await fetch(`https://jemstrust.vercel.app/api/doctors`, {
+  let res = await fetch(`https://jem-s-trust.vercel.app/api/doctors`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',

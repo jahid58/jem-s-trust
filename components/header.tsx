@@ -54,7 +54,7 @@ const Header = () => {
         </div>
 
         {/* Our services */}
-        <div onMouseLeave={() => setService(false)}>
+        {/* <div onMouseLeave={() => setService(false)}>
           <button
             id="dropdownButton"
             onMouseOver={() => setService(true)}
@@ -102,10 +102,10 @@ const Header = () => {
               </ul>
             </div>
           )}
-        </div>
+        </div> */}
         <div className="rounded py-2 px-3 hover:bg-blue-100">
           <p>Contact Us</p>
-        </div> */}
+        </div>
         <div className="rounded py-2 px-3 hover:bg-blue-100">
           <Link href="/bookAppointment">
             <p>Book an Appointment </p>
