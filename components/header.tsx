@@ -13,7 +13,10 @@ const Header = () => {
         <div className="rounded py-2 px-3 hover:bg-blue-100">
           <Link href="/findDoctor">Find a Doctor</Link>
         </div>
-        {/* Find doctor */}
+        <div className="rounded py-2 px-3 hover:bg-blue-100">
+          <Link href="/newDoctor">Add a Doctor</Link>
+        </div>
+        {/* Find doctor
         <div onMouseLeave={() => setAbout(false)}>
           <button
             id="dropdownButton"
@@ -102,7 +105,7 @@ const Header = () => {
         </div>
         <div className="rounded py-2 px-3 hover:bg-blue-100">
           <p>Contact Us</p>
-        </div>
+        </div> */}
         <div className="rounded py-2 px-3 hover:bg-blue-100">
           <Link href="/bookAppointment">
             <p>Book an Appointment </p>

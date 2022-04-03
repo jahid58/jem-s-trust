@@ -52,7 +52,7 @@ const doctor = () => {
 
     console.log(doctor)
     if (doctor.name) {
-      let res = await fetch('http://localhost:3000/api/doctors', {
+      let res = await fetch('https://jemstrust.vercel.app/api/doctors', {
         method: 'POST',
         body: JSON.stringify(doctor),
       })

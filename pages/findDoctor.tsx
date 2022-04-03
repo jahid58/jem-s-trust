@@ -17,7 +17,7 @@ const findDoctor = ({ doctors }: Props) => {
 }
 
 export async function getServerSideProps() {
-  let res = await fetch(`http://localhost:3000/api/doctors`, {
+  let res = await fetch(`https://jemstrust.vercel.app/api/doctors`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
